@@ -88,5 +88,5 @@ async def vote(ctx: commands.Context, *, pergunta: str):
     await msg.add_reaction("👍")
     await msg.add_reaction("👎")
 
-TOKEN = "TOKEN_DO_SEU_BOT"
+TOKEN = "TOKEN_DO_SEU_BOT_AQUI"
 bot.run(TOKEN)
