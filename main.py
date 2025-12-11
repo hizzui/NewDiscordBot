@@ -75,7 +75,7 @@ async def servidor(ctx: commands.Context):
     embed = discord.Embed(title=f"Informações de {guild.name}", color=discord.Color.purple())
     embed.set_thumbnail(url=guild.icon.url if guild.icon else None)
     embed.add_field(name="ID do Servidor", value=guild.id, inline=False)
-    embed.add_field(name="Dono", value=guild.owner.mention, inline=True)
+    embed.add_field(name="Dono", value=guild.owner.mention if guild.owner else "Desconhecido", inline=True)
     embed.add_field(name="Região", value=str(guild.region) if hasattr(guild, 'region') else "Automática", inline=True)
     embed.add_field(name="Membros Totais", value=guild.member_count, inline=True)
     embed.add_field(name="Membros Humanos", value=sum(1 for m in guild.members if not m.bot), inline=True)
@@ -115,5 +115,5 @@ async def vote(ctx: commands.Context, *, pergunta: str):
     await msg.add_reaction("👍")
     await msg.add_reaction("👎")
 
-TOKEN = "TOKEN_DO_SEU_BOT"
+TOKEN = "SEU_TOKEN_AQUI"
 bot.run(TOKEN)
