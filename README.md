@@ -9,23 +9,9 @@
 <h4 align="center">Music, Moderation, Trivia, Stream Alerts and Fully Modular.</h4>
 
 
-<p align="center">
-  <a href="#overview">Overview</a>
-  •
-  <a href="#installation">Installation</a>
-  •
-  <a href="http://docs.discord.red/en/stable/index.html">Documentation</a>
-  •
-  <a href="#plugins">Plugins</a>
-  •
-  <a href="#join-the-community">Community</a>
-  •
-  <a href="#license">License</a>
-</p>
-
 # Overview
 
-Red is a fully modular bot – meaning all features and commands can be enabled/disabled to your
+NDB is a fully modular bot – meaning all features and commands can be enabled/disabled to your
 liking, making it completely customizable. This is a *self-hosted bot* – meaning you will need
 to host and maintain your own instance. You can turn Red into an admin bot, music bot, trivia bot,
 new best friend or all of these together!  
@@ -63,11 +49,8 @@ If after reading the guide you are still experiencing issues, feel free to join 
 
 Red is fully modular, allowing you to load and unload plugins of your choice, and install 3rd party
 plugins directly from Discord! A few examples are:
-
-- Cleverbot integration (talk to Red and she talks back)
 - Ban sync
 - Welcome messages
-- Casino
 - Reaction roles
 - Slow Mode
 - AniList
