@@ -42,9 +42,6 @@ community of cog repositories.**
 - [MacOS](https://docs.discord.red/en/stable/install_guides/mac.html)
 - [Most major linux distributions](https://docs.discord.red/en/stable/install_guides/index.html)
 
-If after reading the guide you are still experiencing issues, feel free to join the
-[Official Discord Server](https://discord.gg/red) and ask in the **#support** channel for help.
-
 # Plugins
 
 Red is fully modular, allowing you to load and unload plugins of your choice, and install 3rd party
@@ -55,6 +52,3 @@ plugins directly from Discord! A few examples are:
 - Slow Mode
 - AniList
 - And much, much more!
-
-Feel free to take a [peek](https://index.discord.red) at a list of
-available 3rd party cogs!
