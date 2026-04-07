@@ -1,4 +1,5 @@
 # NDB Bot - Discord Bot
+<img width="417" height="791" alt="image" src="https://github.com/user-attachments/assets/13725c97-74ad-4b80-a21c-0577bb65fd58" />
 
 Um bot Discord modular com 40+ comandos para moderação, economia, diversão, trivia e monitoramento de streams.
 
