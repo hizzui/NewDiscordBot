@@ -30,7 +30,7 @@ async def update_presence():
         type=discord.ActivityType.watching,
         name=f"{Config.COMMAND_PREFIX}ajuda | {len(bot.guilds)} servidores"
     )
-    await bot.change_presence(activity=activity, status=discord.Status.online)
+    await bot.change_presence(activity=activity, status=discord.Status.idle)
     logger.debug(f"Presença atualizada: {len(bot.guilds)} servidores")
 
 
