@@ -1,52 +1,146 @@
-# gitignore template for ecu.test workspaces - by tracetronic https://tracetronic.com
-# website: https://www.ecu-test.com
-#   * all directories are related to the default directories, please adapt the .gitignore if you use customized directories
+# ==================== TOKENS & CREDENCIAIS ====================
+# Arquivo de variáveis de ambiente com tokens, secrets e credenciais
+.env
+.env.local
+.env.*.local
 
-# Dynamic workspace settings
-#   * We don't recommend to ignore the .workspace directory, because of important 
-#     * project specific settings
-#     * local user settings
-.workspace/ETdrive.xml
-.workspace/favorites.xml
-.workspace/filters.xml
-.workspace/generators.xml
-.workspace/history.xml
-.workspace/parallelExecution.xml
-.workspace/signalviewer.xml
-.workspace/signalViewerHistory.json
-.workspace/signalviewer2layout.xml
-.workspace/testeditor.xml
-.workspace/tooladapter.xml
-.workspace/view.xml
-# optional, if your process depends on this file remove exclusion
-.workspace/attributeLists.xml
-.workspace/interactiveexecution.xml
-.workspace/protocol.xml
-.workspace/pythonlibrary.xml
-# deprecated, support for older versions
-.workspace/traceexplorer.xml
+# Cookies e sessões autenticadas
+cookies.txt
+cookies.json
 
-# Custom file formats and test dependencies
-#  * you can manage your artifacts also with test.guide (https://www.test-guide.info) and reference them via Playbooks
-*.arxml
-*.a2l
-*.dbc
-*.hex
-*.s19
-[tT]estdata
-[tT]estdaten
+# ==================== PYTHON ====================
+# Cache de bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# Test results and test execution related content
-#   * Git is not intended to store and provide test results for all iterations
-#   * We recommend to use test.guide (https://www.test-guide.info) for the test report management
-TestReports
+# Ambientes virtuais
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Report generators and templates
-#   * if you want to provide (f.e.) your own report generators exclude the directory here and ignore only the unnecessary subdirectories
-Templates
+# Pip
+*.pip
 
-# optional, default for external Python libraries
-PyLibs
+# Poetry
+poetry.lock
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==================== ARQUIVOS PESSOAIS & SENSÍVEIS ====================
+# Arquivos de cookies (contém sessões)
+cookies.txt
+cookies.json
+
+# Chaves SSH ou certificados
+*.pem
+*.key
+*.crt
+
+# Arquivos de backup
+*.bak
+*.backup
+*-backup/
+*.old
+*.tmp
+
+# ==================== IDE & EDITOR ====================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+.#*
+\#*\#
+
+# ==================== OS ====================
+# Windows
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+
+# ==================== LOGS ====================
+*.log
+logs/
+bot.log
+error.log
+
+# ==================== BANCO DE DADOS ====================
+*.db
+*.sqlite
+*.sqlite3
+database.json
+
+# ==================== ARQUIVOS DE CONFIGURAÇÃO LOCAIS ====================
+# Configurações específicas do usuário
+config.ini
+settings.json
+local_config.json
+
+# ==================== SISTEMA ====================
+# Node modules (se usar ferramentas Node)
+node_modules/
+
+# ==================== MISC ====================
+# Arquivos temporários do sistema
+*.tmp
+.temp/
+temp/
+
+# Diretórios de teste
+test_results/
+.tox/
+
+# ==================== EXCEÇÕES ====================
+# Não ignore o arquivo de exemplo
+!.env.exemplo
+!.env.example
 
 # Exclude large binary artifacts
 #  * you can manage your artifacts also with test.guide (https://www.test-guide.info) and reference them via Playbooks

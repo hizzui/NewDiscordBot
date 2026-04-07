@@ -1,54 +1,96 @@
-<h1 align="center">
-  <br>
-  <a href="https://github.com/Cog-Creators/Red-DiscordBot/tree/V3/develop"><img src="https://imgur.com/pY1WUFX.png" alt="Red - Discord Bot"></a>
-  <br>
-  NDB Discord Bot
-  <br>
-</h1>
+# 🤖 NDB Bot - Discord Bot Modular
 
-<h4 align="center">Music, Moderation, Trivia, Stream Alerts and Fully Modular.</h4>
+Um bot Discord modular com **40+ comandos** para moderação, economia, diversão, trivia e monitoramento de streams (Twitch).
 
+## ✨ Funcionalidades
 
-# Overview
+**Moderação:** `!kick` `!ban` `!unban` `!mute` `!unmute` `!warn` `!warnings` `!unwarn`
 
-NDB is a fully modular bot – meaning all features and commands can be enabled/disabled to your
-liking, making it completely customizable. This is a *self-hosted bot* – meaning you will need
-to host and maintain your own instance. You can turn Red into an admin bot, music bot, trivia bot,
-new best friend or all of these together!  
+**Economia:** `!balance` `!pay` `!slots` `!payday` `!leaderboard`
 
-[Installation](#installation) is easy, and you do **NOT** need to know anything about coding! Aside
-from installing and updating, every part of the bot can be controlled from within Discord.
+**Diversão:** `!dado` `!moeda` `!vote` `!calc`
 
-**The default set of modules includes and is not limited to:**
+**Trivia:** `!trivia` `!trivia_score` `!trivia_top` (50+ perguntas)
 
-- Moderation features (kick/ban/softban/hackban, mod-log, filter, chat cleanup)
-- Trivia (lists are included and can be easily added)
-- Music features (YouTube, SoundCloud, local files, playlists, queues)
-- Stream alerts (Twitch, Youtube, Picarto)
-- Bank (slot machine, user credits)
-- Custom commands
-- Imgur/gif search
-- Admin automation (self-role assignment, cross-server announcements, mod-mail reports)
-- Customisable command permissions
+**Customizados:** `!customcom create` `!customcom delete` `!customcom list` `!customcom show`
 
-**Additionally, other [plugins](#plugins) (cogs) can be easily found and added from our growing
-community of cog repositories.**
+**Streams:** `!stream add/remove/list/check` (Twitch API)
 
-# Installation
+**Limpeza:** `!purge` `!clean` `!cleanup` `!clear`
 
-**The following platforms are officially supported:** 
+**Informações:** `!user` `!servidor` `!avatar` `!ajuda`
 
-- [Windows](https://docs.discord.red/en/stable/install_guides/windows.html)
-- [MacOS](https://docs.discord.red/en/stable/install_guides/mac.html)
-- [Most major linux distributions](https://docs.discord.red/en/stable/install_guides/index.html)
+---
 
-# Plugins
+## 🚀 Quick Start
 
-Red is fully modular, allowing you to load and unload plugins of your choice, and install 3rd party
-plugins directly from Discord! A few examples are:
-- Ban sync
-- Welcome messages
-- Reaction roles
-- Slow Mode
-- AniList
-- And much, much more!
+### Pré-requisitos
+- Python 3.10+
+- Token do Discord Bot
+
+### Instalação
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+```
+
+### Configuração
+Edite `.env` e adicione:
+```
+DISCORD_TOKEN=seu_token_aqui
+TWITCH_CLIENT_ID=opcional
+TWITCH_ACCESS_TOKEN=opcional
+```
+
+### Rodar
+```bash
+python main.py
+```
+
+---
+
+## 📁 Estrutura
+
+```
+cogs/
+ ├── general.py      → Gerais + ajuda
+ ├── moderation.py   → Moderação
+ ├── economy.py      → Economia
+ ├── fun.py          → Diversão
+ ├── trivia.py       → Trivia
+ ├── streams.py      → Twitch
+ ├── customcom.py    → Customizados
+ ├── cleanup.py      → Limpeza
+ └── info.py         → Informações
+
+config.py           → Configurações
+logging_config.py   → Logging
+main.py             → Entry point
+```
+
+---
+
+## 🔧 Configuração
+
+### Variáveis de Ambiente
+```
+DISCORD_TOKEN=           (obrigatório)
+TWITCH_CLIENT_ID=        (opcional)
+TWITCH_ACCESS_TOKEN=     (opcional)
+LOG_LEVEL=INFO
+COMMAND_PREFIX=!
+```
+
+### Dependências
+- discord.py 2.3.2
+- aiohttp 3.9.1
+- python-dotenv
+- yt-dlp
+- PyNaCl
+
+---
+
+## 📝 Licença
+
+MIT License
+

@@ -1,0 +1,12 @@
+{
+    "notify_channel": null,
+    "streamers": [
+        {
+            "tipo": "twitch",
+            "nome": "tck",
+            "guild_id": 1491146389596672157,
+            "adicionado_por": "hizzui",
+            "data": "2026-04-07T15:41:33.939808"
+        }
+    ]
+}
