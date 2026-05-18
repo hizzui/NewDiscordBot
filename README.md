@@ -1,57 +1,36 @@
-# NDB Bot - Discord Bot
+# NDB Bot - Discord Automation Platform
 
-<img width="736" height="414" alt="image" src="https://github.com/user-attachments/assets/6ce3a2a0-39e4-4222-95b0-37da2225ebec" />
+<img width="736" height="414" alt="NDB Bot Banner" src="https://github.com/user-attachments/assets/6ce3a2a0-39e4-4222-95b0-37da2225ebec" />
 
+A feature-rich, modular Discord bot with over 40 advanced commands built to handle server moderation, virtual economy, interactive games, trivia datasets, and dynamic livestream tracking.
 
-Um bot Discord modular com 40+ comandos para moderação, economia, diversão, trivia e monitoramento de streams.
+## 🚀 Core Modules & Features
 
-## Funcionalidades
+- **Moderation:** Complete toolkit for server safety (`kick`, `ban`, `unban`, `mute`, `unmute`, `warn`, `warnings`, `unwarn`).
+- **Economy:** Fully functional virtual currency engine (`balance`, `pay`, `slots`, `payday`, `leaderboard`).
+- **Fun & Games:** Quick interaction utilities (`dado` (dice), `moeda` (coin flip), `vote`, `calc`).
+- **Trivia Engine:** Interactive game module with a pool of 50+ built-in questions (`trivia`, `trivia_score`, `trivia_top`).
+- **Custom Commands:** Allows server admins to handle dynamic message hooks (`customcom create`, `customcom delete`, `customcom list`, `customcom show`).
+- **Livestream Tracking:** Real-time stream monitoring utilizing async hooks for the Twitch API (`stream add`, `stream remove`, `stream list`, `stream check`).
+- **Channel Cleanup:** High-speed bulk message deletion utilities (`purge`, `clean`, `cleanup`, `clear`).
+- **Information:** Rich embedded server and profile data diagnostics (`user`, `servidor`, `avatar`, `ajuda`).
 
-**Moderacao:** kick, ban, unban, mute, unmute, warn, warnings, unwarn
+---
 
-**Economia:** balance, pay, slots, payday, leaderboard
+## 💻 Quick Start
 
-**Diversao:** dado, moeda, vote, calc
-
-**Trivia:** trivia, trivia_score, trivia_top (50+ perguntas)
-
-**Customizados:** customcom create, customcom delete, customcom list, customcom show
-
-**Streams:** stream add, stream remove, stream list, stream check (Twitch API)
-
-**Limpeza:** purge, clean, cleanup, clear
-
-**Informacoes:** user, servidor, avatar, ajuda
-
-## Quick Start
-
-### Requisitos
+### Prerequisites
 - Python 3.10+
-- Discord Token
+- A Discord Bot Token (via Discord Developer Portal)
 
-### Instalacao
+### Installation
 ```bash
+# Clone the repository and navigate to the root directory
+git clone [https://github.com/rycarvalho/ndb-bot.git](https://github.com/rycarvalho/ndb-bot.git)
+cd ndb-bot
+
+# Install the required dependencies
 pip install -r requirements.txt
+
+# Set up your environment file
 cp .env.example .env
-```
-
-### Configuracao
-Edite .env:
-```
-DISCORD_TOKEN=seu_token
-```
-
-### Rodar
-```bash
-python main.py
-```
-
-## Dependencias
-
-- discord.py 2.3.2
-- aiohttp 3.9.1
-- python-dotenv
-- yt-dlp
-- PyNaCl
-
-
